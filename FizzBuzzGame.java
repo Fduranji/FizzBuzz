@@ -10,11 +10,14 @@ public class FizzBuzzGame
 {
    public static void main(String[] args)
    {
+      //Arrays to hold both the answers and 
+      //player input
       String[] ans = new String[15];
       String[] FizzBuzz = new String[15];
-      
+      //To read from keyboard
       Scanner keyboard = new Scanner(System.in);
       
+      //Filling in the ans array with the answers
       for(int i = 0; i < ans.length; i++)
       {
          String output = "";
@@ -30,8 +33,8 @@ public class FizzBuzzGame
                          "\nDivisible by both 3 and 5, enter FizzBuzz.");
                       
       
-      String input;
-      
+      String input; //Hold user input
+      //Filling in the FizzBuzz array with user input
       for(int i = 0; i < ans.length; i++)
       {
          System.out.print("Enter the number: ");
@@ -39,8 +42,8 @@ public class FizzBuzzGame
          FizzBuzz[i] = input;
       }
       
-      int correct = 0;
-      
+      int correct = 0; //Hold the correct number of answers
+      //Comparing the arrays
       for(int i = 0; i < ans.length; i++)
       {
          if( ans[i].equals(FizzBuzz[i]) )
